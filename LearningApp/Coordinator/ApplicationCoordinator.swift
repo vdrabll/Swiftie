@@ -8,15 +8,19 @@
 import Foundation
 import UIKit
 
-class ApplicationCoordinator: Coordinator {
-    
+final class ApplicationCoordinator: Coordinator {
     let window: UIWindow
+    
+    var childCoordinators = [Coordinator].self
     
     init(window: UIWindow) {
         self.window = window
     }
     
     func start() {
-        window.rootViewController = ViewController() 
+        let registrationCoordinator = RegistrationCoordinator()
+        registrationCoordinator.start()
+        registrationCoordinator.rootViewController.view.backgroundColor = .green
+        window.rootViewController = registrationCoordinator.rootViewController
     }
 }

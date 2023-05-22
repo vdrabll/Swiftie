@@ -9,16 +9,30 @@
 /* Begin PBXBuildFile section */
 		512A13C92A14AD7600B59D25 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A13C82A14AD7600B59D25 /* Coordinator.swift */; };
 		512A13CC2A14ADF800B59D25 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A13CB2A14ADF800B59D25 /* ApplicationCoordinator.swift */; };
+		516581D02A188D7900DEF337 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516581CF2A188D7900DEF337 /* RegistrationCoordinator.swift */; };
+		516581D42A188DBB00DEF337 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516581D32A188DBB00DEF337 /* RegistrationView.swift */; };
 		51B3310A2A149D1E0071BD56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B331092A149D1E0071BD56 /* AppDelegate.swift */; };
 		51B3310C2A149D1E0071BD56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3310B2A149D1E0071BD56 /* SceneDelegate.swift */; };
 		51B3310E2A149D1E0071BD56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3310D2A149D1E0071BD56 /* ViewController.swift */; };
 		51B331142A149D1E0071BD56 /* LearningApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51B331122A149D1E0071BD56 /* LearningApp.xcdatamodeld */; };
 		51B331162A149D210071BD56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B331152A149D210071BD56 /* Assets.xcassets */; };
+		51DB53D42A1B33D6003F6A66 /* ContentViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53D32A1B33D6003F6A66 /* ContentViewCoordinator.swift */; };
+		51DB53D72A1B3727003F6A66 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53D62A1B3727003F6A66 /* ContentViewController.swift */; };
+		51DB53D92A1B4895003F6A66 /* CoreDataServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53D82A1B4895003F6A66 /* CoreDataServise.swift */; };
+		51DB53DC2A1B48B6003F6A66 /* NetworkServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53DB2A1B48B6003F6A66 /* NetworkServise.swift */; };
+		51DB53DF2A1B5417003F6A66 /* AccountViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53DE2A1B5417003F6A66 /* AccountViewCoordinator.swift */; };
+		51DB53E32A1B585B003F6A66 /* QuizViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53E22A1B585B003F6A66 /* QuizViewCoordinator.swift */; };
+		51DB53E52A1B58E0003F6A66 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53E42A1B58E0003F6A66 /* QuizViewController.swift */; };
+		51F51E472A165F390067723D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F51E462A165F390067723D /* MainViewController.swift */; };
+		51F51E4A2A1660140067723D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F51E492A1660140067723D /* AccountView.swift */; };
+		51F51E4E2A1661D60067723D /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F51E4D2A1661D60067723D /* MainViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		512A13C82A14AD7600B59D25 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		512A13CB2A14ADF800B59D25 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		516581CF2A188D7900DEF337 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
+		516581D32A188DBB00DEF337 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		51B331062A149D1E0071BD56 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B331092A149D1E0071BD56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B3310B2A149D1E0071BD56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +40,16 @@
 		51B331132A149D1E0071BD56 /* LearningApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LearningApp.xcdatamodel; sourceTree = "<group>"; };
 		51B331152A149D210071BD56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51B3311A2A149D210071BD56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51DB53D32A1B33D6003F6A66 /* ContentViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCoordinator.swift; sourceTree = "<group>"; };
+		51DB53D62A1B3727003F6A66 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		51DB53D82A1B4895003F6A66 /* CoreDataServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServise.swift; sourceTree = "<group>"; };
+		51DB53DB2A1B48B6003F6A66 /* NetworkServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServise.swift; sourceTree = "<group>"; };
+		51DB53DE2A1B5417003F6A66 /* AccountViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCoordinator.swift; sourceTree = "<group>"; };
+		51DB53E22A1B585B003F6A66 /* QuizViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewCoordinator.swift; sourceTree = "<group>"; };
+		51DB53E42A1B58E0003F6A66 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		51F51E462A165F390067723D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		51F51E492A1660140067723D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		51F51E4D2A1661D60067723D /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +63,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512836FB2A17B7B300C507A7 /* Scence */ = {
+			isa = PBXGroup;
+			children = (
+				512836FE2A17B87200C507A7 /* Registration */,
+				51F51E442A165F090067723D /* Main */,
+				512836FD2A17B86100C507A7 /* Content */,
+				51F51E482A165F3F0067723D /* Account */,
+				512837002A17BDBA00C507A7 /* Quiz */,
+			);
+			path = Scence;
+			sourceTree = "<group>";
+		};
+		512836FC2A17B7D200C507A7 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53D82A1B4895003F6A66 /* CoreDataServise.swift */,
+				51DB53DB2A1B48B6003F6A66 /* NetworkServise.swift */,
+			);
+			path = Servises;
+			sourceTree = "<group>";
+		};
+		512836FD2A17B86100C507A7 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53D22A1B33C0003F6A66 /* Coordinator */,
+				51DB53D12A1B33BA003F6A66 /* View */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		512836FE2A17B87200C507A7 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				516581D22A188DA100DEF337 /* Coordinator */,
+				516581D12A188D9900DEF337 /* View */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		512836FF2A17BCC100C507A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51B331122A149D1E0071BD56 /* LearningApp.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		512837002A17BDBA00C507A7 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53E12A1B57DC003F6A66 /* View */,
+				51DB53E02A1B57CB003F6A66 /* Coordinator */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
 		512A13C62A14A78600B59D25 /* Support files */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +145,22 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		516581D12A188D9900DEF337 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				516581D32A188DBB00DEF337 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		516581D22A188DA100DEF337 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				516581CF2A188D7900DEF337 /* RegistrationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		51B330FD2A149D1E0071BD56 = {
 			isa = PBXGroup;
 			children = (
@@ -84,14 +180,98 @@
 		51B331082A149D1E0071BD56 /* LearningApp */ = {
 			isa = PBXGroup;
 			children = (
+				512836FF2A17BCC100C507A7 /* Model */,
+				512836FC2A17B7D200C507A7 /* Servises */,
+				512836FB2A17B7B300C507A7 /* Scence */,
 				512A13CA2A14ADD800B59D25 /* Coordinator */,
 				512A13C72A14AD5A00B59D25 /* Protocols */,
 				512A13C62A14A78600B59D25 /* Support files */,
 				51B3310D2A149D1E0071BD56 /* ViewController.swift */,
 				51B3311A2A149D210071BD56 /* Info.plist */,
-				51B331122A149D1E0071BD56 /* LearningApp.xcdatamodeld */,
 			);
 			path = LearningApp;
+			sourceTree = "<group>";
+		};
+		51DB53D12A1B33BA003F6A66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53D62A1B3727003F6A66 /* ContentViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51DB53D22A1B33C0003F6A66 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53D32A1B33D6003F6A66 /* ContentViewCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		51DB53DD2A1B53F9003F6A66 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53DE2A1B5417003F6A66 /* AccountViewCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		51DB53E02A1B57CB003F6A66 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53E22A1B585B003F6A66 /* QuizViewCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		51DB53E12A1B57DC003F6A66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53E42A1B58E0003F6A66 /* QuizViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51F51E442A165F090067723D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				51F51E4C2A1660B90067723D /* Coordinator */,
+				51F51E452A165F1A0067723D /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		51F51E452A165F1A0067723D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51F51E462A165F390067723D /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51F51E482A165F3F0067723D /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53DD2A1B53F9003F6A66 /* Coordinator */,
+				51F51E4B2A16601A0067723D /* View */,
+				51F51E492A1660140067723D /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		51F51E4B2A16601A0067723D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51F51E4C2A1660B90067723D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				51F51E4D2A1661D60067723D /* MainViewCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,11 +343,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516581D42A188DBB00DEF337 /* RegistrationView.swift in Sources */,
 				51B3310E2A149D1E0071BD56 /* ViewController.swift in Sources */,
+				51F51E472A165F390067723D /* MainViewController.swift in Sources */,
+				51DB53DF2A1B5417003F6A66 /* AccountViewCoordinator.swift in Sources */,
+				51DB53DC2A1B48B6003F6A66 /* NetworkServise.swift in Sources */,
+				51DB53D72A1B3727003F6A66 /* ContentViewController.swift in Sources */,
 				51B331142A149D1E0071BD56 /* LearningApp.xcdatamodeld in Sources */,
+				51DB53D42A1B33D6003F6A66 /* ContentViewCoordinator.swift in Sources */,
+				516581D02A188D7900DEF337 /* RegistrationCoordinator.swift in Sources */,
 				512A13C92A14AD7600B59D25 /* Coordinator.swift in Sources */,
+				51F51E4E2A1661D60067723D /* MainViewCoordinator.swift in Sources */,
+				51F51E4A2A1660140067723D /* AccountView.swift in Sources */,
 				51B3310A2A149D1E0071BD56 /* AppDelegate.swift in Sources */,
+				51DB53E32A1B585B003F6A66 /* QuizViewCoordinator.swift in Sources */,
 				51B3310C2A149D1E0071BD56 /* SceneDelegate.swift in Sources */,
+				51DB53E52A1B58E0003F6A66 /* QuizViewController.swift in Sources */,
+				51DB53D92A1B4895003F6A66 /* CoreDataServise.swift in Sources */,
 				512A13CC2A14ADF800B59D25 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

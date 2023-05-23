@@ -20,7 +20,6 @@ final class ApplicationCoordinator: Coordinator {
     func start() {
         let registrationCoordinator = RegistrationCoordinator()
         registrationCoordinator.start()
-        registrationCoordinator.rootViewController.view.backgroundColor = .green
         window.rootViewController = registrationCoordinator.rootViewController
     }
 }

@@ -91,7 +91,8 @@ final class FieldsView: UIView {
         let lable = UIButton()
         lable.setTitle( Constants.lableContunie, for: .normal)
         lable.titleLabel?.textColor = .white
-        lable.titleLabel?.backgroundColor = .orange
+        lable.backgroundColor = .orange
+        lable.layer.cornerRadius = 10
         lable.titleLabel?.font = UIFont(name: Constants.fontName, size: Constants.fontMediumSize)
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
@@ -108,7 +109,7 @@ final class FieldsView: UIView {
         static let fieldNumberDefoultText = "+7 (000)000-00-00 "
         static let lablePassword = "Пароль"
         static let fieldPaswordDefoultText = "Введите свой пароль"
-        static let forgetPassword = "Забили пароль?"
+        static let forgetPassword = "Забыли пароль?"
         static let lableContunie = "Продолжить"
     }
     
@@ -155,16 +156,18 @@ private extension FieldsView {
             phoneTextField.heightAnchor.constraint(equalToConstant: 50),
             phoneTextField.topAnchor.constraint(equalTo: self.topAnchor, constant: 170),
             phoneTextField.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
-            lablePassword.topAnchor.constraint(equalTo: self.topAnchor, constant: 220),
-            lablePassword.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 39),
+            lablePassword.topAnchor.constraint(equalTo: self.topAnchor, constant: 230),
+            lablePassword.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
             passwordTextField.widthAnchor.constraint(equalToConstant: 330),
             passwordTextField.heightAnchor.constraint(equalToConstant: 50),
             passwordTextField.topAnchor.constraint(equalTo: self.topAnchor, constant: 255),
             passwordTextField.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
             forgetPasswordLable.topAnchor.constraint(equalTo:self.topAnchor, constant: 321),
-            forgetPasswordLable.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 41)
-            
-        
+            forgetPasswordLable.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 41),
+            contunueButton.widthAnchor.constraint(equalToConstant: 330),
+            contunueButton.heightAnchor.constraint(equalToConstant: 50),
+            contunueButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 376),
+            contunueButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 32)
             ])
     }
 }

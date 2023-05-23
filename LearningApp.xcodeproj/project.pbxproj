@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511D40FF2A1C9F0500953795 /* RegistrationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D40FE2A1C9F0500953795 /* RegistrationTitleView.swift */; };
+		511D41012A1CF00700953795 /* FieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D41002A1CF00700953795 /* FieldsView.swift */; };
 		512A13C92A14AD7600B59D25 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A13C82A14AD7600B59D25 /* Coordinator.swift */; };
 		512A13CC2A14ADF800B59D25 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A13CB2A14ADF800B59D25 /* ApplicationCoordinator.swift */; };
 		516581D02A188D7900DEF337 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516581CF2A188D7900DEF337 /* RegistrationCoordinator.swift */; };
@@ -23,12 +25,15 @@
 		51DB53DF2A1B5417003F6A66 /* AccountViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53DE2A1B5417003F6A66 /* AccountViewCoordinator.swift */; };
 		51DB53E32A1B585B003F6A66 /* QuizViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53E22A1B585B003F6A66 /* QuizViewCoordinator.swift */; };
 		51DB53E52A1B58E0003F6A66 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53E42A1B58E0003F6A66 /* QuizViewController.swift */; };
+		51DB53E82A1B61BE003F6A66 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB53E72A1B61BD003F6A66 /* RegistrationViewModel.swift */; };
 		51F51E472A165F390067723D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F51E462A165F390067723D /* MainViewController.swift */; };
 		51F51E4A2A1660140067723D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F51E492A1660140067723D /* AccountView.swift */; };
 		51F51E4E2A1661D60067723D /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F51E4D2A1661D60067723D /* MainViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		511D40FE2A1C9F0500953795 /* RegistrationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTitleView.swift; sourceTree = "<group>"; };
+		511D41002A1CF00700953795 /* FieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsView.swift; sourceTree = "<group>"; };
 		512A13C82A14AD7600B59D25 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		512A13CB2A14ADF800B59D25 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		516581CF2A188D7900DEF337 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		51DB53DE2A1B5417003F6A66 /* AccountViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCoordinator.swift; sourceTree = "<group>"; };
 		51DB53E22A1B585B003F6A66 /* QuizViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewCoordinator.swift; sourceTree = "<group>"; };
 		51DB53E42A1B58E0003F6A66 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		51DB53E72A1B61BD003F6A66 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		51F51E462A165F390067723D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		51F51E492A1660140067723D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		51F51E4D2A1661D60067723D /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
@@ -63,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		511D40FD2A1C9EE100953795 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				511D40FE2A1C9F0500953795 /* RegistrationTitleView.swift */,
+				511D41002A1CF00700953795 /* FieldsView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		512836FB2A17B7B300C507A7 /* Scence */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +111,7 @@
 		512836FE2A17B87200C507A7 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				51DB53E62A1B6191003F6A66 /* ViewModel */,
 				516581D22A188DA100DEF337 /* Coordinator */,
 				516581D12A188D9900DEF337 /* View */,
 			);
@@ -149,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				516581D32A188DBB00DEF337 /* RegistrationView.swift */,
+				511D40FD2A1C9EE100953795 /* Subviews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +247,14 @@
 				51DB53E42A1B58E0003F6A66 /* QuizViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		51DB53E62A1B6191003F6A66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				51DB53E72A1B61BD003F6A66 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		51F51E442A165F090067723D /* Main */ = {
@@ -346,6 +371,8 @@
 				516581D42A188DBB00DEF337 /* RegistrationView.swift in Sources */,
 				51B3310E2A149D1E0071BD56 /* ViewController.swift in Sources */,
 				51F51E472A165F390067723D /* MainViewController.swift in Sources */,
+				511D41012A1CF00700953795 /* FieldsView.swift in Sources */,
+				51DB53E82A1B61BE003F6A66 /* RegistrationViewModel.swift in Sources */,
 				51DB53DF2A1B5417003F6A66 /* AccountViewCoordinator.swift in Sources */,
 				51DB53DC2A1B48B6003F6A66 /* NetworkServise.swift in Sources */,
 				51DB53D72A1B3727003F6A66 /* ContentViewController.swift in Sources */,
@@ -360,6 +387,7 @@
 				51B3310C2A149D1E0071BD56 /* SceneDelegate.swift in Sources */,
 				51DB53E52A1B58E0003F6A66 /* QuizViewController.swift in Sources */,
 				51DB53D92A1B4895003F6A66 /* CoreDataServise.swift in Sources */,
+				511D40FF2A1C9F0500953795 /* RegistrationTitleView.swift in Sources */,
 				512A13CC2A14ADF800B59D25 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

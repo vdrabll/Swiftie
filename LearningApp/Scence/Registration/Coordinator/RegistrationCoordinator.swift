@@ -15,8 +15,7 @@ final class RegistrationCoordinator: Coordinator {
     
     func start() {
         let view = RegistrationView()
-        let hostiongViewControoler = UIViewController()
-        hostiongViewControoler.view = RegistrationView()
+        rootViewController.view = view
         childCoordinator.append(MainViewCoordinator())
     }
 }

@@ -13,14 +13,14 @@ class MainViewCoordinator: Coordinator {
     
     var childCoordinators = [Coordinator]()
     
-    lazy var mainViewControoler:MainViewController = {
+    lazy var mainViewControler:MainViewController = {
         var vc = MainViewController()
         return vc
     }()
     
     func start() {
         
-        rootView.view = mainViewControoler
+        rootView.view = mainViewControler
         childCoordinators.append(MainViewCoordinator())
         
     }

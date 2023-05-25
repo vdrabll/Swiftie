@@ -8,5 +8,17 @@
 import Foundation
 
 final class RegistrationViewModel {
+    var view = RegistrationView()
     
+    func cheakRegistrationStatus() {
+        
+    }
+    
+    func createNewAccount() {
+        
+    }
+    
+    func requestToResetPassword() {
+        
+    }
 }

@@ -13,6 +13,8 @@
 		512A13CC2A14ADF800B59D25 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A13CB2A14ADF800B59D25 /* ApplicationCoordinator.swift */; };
 		5157AB1B2A1F520A002BEC6A /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157AB1A2A1F5209002BEC6A /* MainScreenViewModel.swift */; };
 		5157AB202A1F5E80002BEC6A /* LessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157AB1F2A1F5E80002BEC6A /* LessionsView.swift */; };
+		5157AB282A1F7348002BEC6A /* LessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157AB272A1F7348002BEC6A /* LessionViewModel.swift */; };
+		5157AB2B2A1F73B3002BEC6A /* LessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157AB2A2A1F73B3002BEC6A /* LessionTableViewCell.swift */; };
 		516581D02A188D7900DEF337 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516581CF2A188D7900DEF337 /* RegistrationCoordinator.swift */; };
 		516581D42A188DBB00DEF337 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516581D32A188DBB00DEF337 /* RegistrationView.swift */; };
 		51B3310A2A149D1E0071BD56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B331092A149D1E0071BD56 /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 		512A13CB2A14ADF800B59D25 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		5157AB1A2A1F5209002BEC6A /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		5157AB1F2A1F5E80002BEC6A /* LessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionsView.swift; sourceTree = "<group>"; };
+		5157AB272A1F7348002BEC6A /* LessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionViewModel.swift; sourceTree = "<group>"; };
+		5157AB2A2A1F73B3002BEC6A /* LessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionTableViewCell.swift; sourceTree = "<group>"; };
 		516581CF2A188D7900DEF337 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		516581D32A188DBB00DEF337 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		51B331062A149D1E0071BD56 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +181,7 @@
 		5157AB1D2A1F5E4C002BEC6A /* LissionsView */ = {
 			isa = PBXGroup;
 			children = (
+				5157AB262A1F732C002BEC6A /* ViewModel */,
 				5157AB1E2A1F5E62002BEC6A /* Vies */,
 			);
 			path = LissionsView;
@@ -186,8 +191,25 @@
 			isa = PBXGroup;
 			children = (
 				5157AB1F2A1F5E80002BEC6A /* LessionsView.swift */,
+				5157AB292A1F7382002BEC6A /* Cells */,
 			);
 			path = Vies;
+			sourceTree = "<group>";
+		};
+		5157AB262A1F732C002BEC6A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5157AB272A1F7348002BEC6A /* LessionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5157AB292A1F7382002BEC6A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5157AB2A2A1F73B3002BEC6A /* LessionTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		516581D12A188D9900DEF337 /* View */ = {
@@ -415,7 +437,9 @@
 				51F51E4A2A1660140067723D /* AccountView.swift in Sources */,
 				51B3310A2A149D1E0071BD56 /* AppDelegate.swift in Sources */,
 				51DB53E32A1B585B003F6A66 /* QuizViewCoordinator.swift in Sources */,
+				5157AB2B2A1F73B3002BEC6A /* LessionTableViewCell.swift in Sources */,
 				51B3310C2A149D1E0071BD56 /* SceneDelegate.swift in Sources */,
+				5157AB282A1F7348002BEC6A /* LessionViewModel.swift in Sources */,
 				51DB53E52A1B58E0003F6A66 /* QuizViewController.swift in Sources */,
 				5157AB202A1F5E80002BEC6A /* LessionsView.swift in Sources */,
 				51DB53D92A1B4895003F6A66 /* CoreDataServise.swift in Sources */,

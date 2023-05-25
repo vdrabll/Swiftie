@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TestView: UIView {
+final class AccountView: UIView {
         
         init() {
             super.init(frame: .zero)
@@ -19,7 +19,7 @@ final class TestView: UIView {
         }
         
     }
-    extension TestView {
+    extension AccountView {
         func setupSubviews() {
             
         }

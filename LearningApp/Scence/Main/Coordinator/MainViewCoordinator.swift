@@ -9,19 +9,20 @@ import Foundation
 import UIKit
 
 class MainViewCoordinator: Coordinator {
-    var rootView = UIViewController()
+    var rootViewController = UIViewController()
+    var viewModel = MainScreenViewModel()
     
     var childCoordinators = [Coordinator]()
     
     lazy var mainViewControler:MainViewController = {
-        var vc = MainViewController()
+        var vc = MainViewController(viewModel: self.viewModel)
         return vc
     }()
     
     func start() {
-        
-        rootView.view = mainViewControler
-        childCoordinators.append(MainViewCoordinator())
+        rootViewController.view = mainViewControler
+        childCoordinators.append(ContentViewCoordinator())
+        childCoordinators.append(AccountViewCoordinator())
         
     }
 }

@@ -19,7 +19,7 @@ final class MainViewController: UIView {
     init(viewModel: MainScreenViewModel) {
         self.viewModel = viewModel
         super.init(frame: .zero)
-        backgroundColor = .yellow
+        backgroundColor = .orange
         setupSegmentControll()
         setupSubviews()
     }
@@ -30,27 +30,35 @@ final class MainViewController: UIView {
     
     private func setupSegmentControll() {
         self.pageControll = UISegmentedControl(items: self.viewModel.segmentData)
+        self.pageControll.backgroundColor = .clear
         self.pageControll.addTarget(self, action: #selector(selectedValue), for: .valueChanged)
    
         
     }
     
     @objc func selectedValue(target: UISegmentedControl) {
+        
+    // TODO: исправить дефолтное окно и размер вью аккаунта 
         addSubview(lessionsView)
         lessionsView.translatesAutoresizingMaskIntoConstraints = false
         setSize(view: lessionsView)
         lessionsView.isHidden = false
+        
         addSubview(accountView)
         accountView.translatesAutoresizingMaskIntoConstraints = false
         setSize(view: accountView)
-        accountView.isHidden = false
-        
-        if pageControll.selectedSegmentIndex == 0 {
+        accountView.isHidden = true
+       
+        switch target.selectedSegmentIndex {
+        case 0:
             lessionsView.isHidden = false
             accountView.isHidden = true
-        } else {
+        case 1:
             lessionsView.isHidden = true
             accountView.isHidden = false
+        default:
+            lessionsView.isHidden = false
+            accountView.isHidden = true
         }
     }
    

@@ -20,6 +20,8 @@ class LessionsView: UIView{
 
     override init(frame: CGRect) {
         super.init(frame: .zero)
+        
+        
         self.tableView.backgroundColor = .clear
         self.tableView.dataSource = self
         self.tableView.delegate = self

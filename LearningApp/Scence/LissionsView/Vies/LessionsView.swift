@@ -40,7 +40,7 @@ extension LessionsView {
         tableView.showsVerticalScrollIndicator = false
         
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: topAnchor),
+            tableView.topAnchor.constraint(equalTo: topAnchor, constant: 60),
             tableView.leftAnchor.constraint(equalTo: leftAnchor, constant: 25),
             tableView.rightAnchor.constraint(equalTo: rightAnchor, constant: -25),
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -25),

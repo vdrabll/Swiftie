@@ -91,12 +91,11 @@
 		512836FB2A17B7B300C507A7 /* Scence */ = {
 			isa = PBXGroup;
 			children = (
+				51DAE4D22A26156300D1E975 /* FeatureTasks */,
 				512836FE2A17B87200C507A7 /* Registration */,
 				51F51E442A165F090067723D /* Main */,
 				5157AB1D2A1F5E4C002BEC6A /* LissionsView */,
 				512836FD2A17B86100C507A7 /* Content */,
-				51F51E482A165F3F0067723D /* Account */,
-				512837002A17BDBA00C507A7 /* Quiz */,
 			);
 			path = Scence;
 			sourceTree = "<group>";
@@ -260,6 +259,15 @@
 				51B3311A2A149D210071BD56 /* Info.plist */,
 			);
 			path = LearningApp;
+			sourceTree = "<group>";
+		};
+		51DAE4D22A26156300D1E975 /* FeatureTasks */ = {
+			isa = PBXGroup;
+			children = (
+				512837002A17BDBA00C507A7 /* Quiz */,
+				51F51E482A165F3F0067723D /* Account */,
+			);
+			path = FeatureTasks;
 			sourceTree = "<group>";
 		};
 		51DB53D12A1B33BA003F6A66 /* View */ = {

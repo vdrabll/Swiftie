@@ -65,7 +65,7 @@ final class MainViewController: UIView {
             view.topAnchor.constraint(equalTo: topAnchor),
             view.leftAnchor.constraint(equalTo: leftAnchor),
             view.rightAnchor.constraint(equalTo: rightAnchor),
-            view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -60),
+            view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -80),
         ])
     }
 }

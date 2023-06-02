@@ -38,7 +38,7 @@ final class FieldsView: UIView {
     
     var lableNumber: UILabel = {
         let lable = UILabel()
-        lable.text = Constants.lableNumber
+        lable.text = Constants.lableMail
         lable.font = UIFont(name: Constants.fontName, size: Constants.fontMediumSize)
         lable.adjustsFontSizeToFitWidth = true
         lable.translatesAutoresizingMaskIntoConstraints = false
@@ -47,7 +47,7 @@ final class FieldsView: UIView {
     
     var phoneTextField: UITextField = {
         var field = UITextField()
-        field.text = Constants.fieldNumberDefoultText
+        field.text = Constants.fieldMailDefoultText
         field.layer.cornerRadius = 15
         field.borderStyle = .roundedRect
         field.translatesAutoresizingMaskIntoConstraints = false
@@ -105,8 +105,8 @@ final class FieldsView: UIView {
         static let lableName = "Авторизация"
         static let lableSingupSuggestion = "Хотите создать новый аккаунт?"
         static let buttonSingupText = "Регистрация"
-        static let lableNumber = "Номер телефона"
-        static let fieldNumberDefoultText = "+7 (000)000-00-00 "
+        static let lableMail = "Email"
+        static let fieldMailDefoultText = "example@gmail.com"
         static let lablePassword = "Пароль"
         static let fieldPaswordDefoultText = "Введите свой пароль"
         static let forgetPassword = "Забыли пароль?"

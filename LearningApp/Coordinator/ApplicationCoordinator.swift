@@ -18,7 +18,7 @@ final class ApplicationCoordinator: Coordinator {
     }
     
     func start() {
-        let registrationCoordinator = MainViewCoordinator()
+        let registrationCoordinator = RegistrationCoordinator()
         registrationCoordinator.start()
         window.rootViewController = registrationCoordinator.rootViewController
     }

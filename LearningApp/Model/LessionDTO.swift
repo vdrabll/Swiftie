@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Lession {
+    let name: String
+    let content: String
+    let questions: String
+}

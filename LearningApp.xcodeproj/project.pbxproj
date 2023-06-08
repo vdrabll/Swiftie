@@ -52,6 +52,7 @@
 		518BDC722A30F5B300CD98C7 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518BDC712A30F5B300CD98C7 /* ContentViewModel.swift */; };
 		518BDC742A30F62100CD98C7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518BDC732A30F62100CD98C7 /* ViewModel.swift */; };
 		518BDC782A30F6CA00CD98C7 /* LessionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518BDC772A30F6CA00CD98C7 /* LessionDTO.swift */; };
+		518BDC7A2A319AE700CD98C7 /* PrealoadedData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 518BDC792A319AE600CD98C7 /* PrealoadedData.plist */; };
 		51B3310A2A149D1E0071BD56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B331092A149D1E0071BD56 /* AppDelegate.swift */; };
 		51B3310C2A149D1E0071BD56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3310B2A149D1E0071BD56 /* SceneDelegate.swift */; };
 		51B3310E2A149D1E0071BD56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3310D2A149D1E0071BD56 /* ViewController.swift */; };
@@ -89,6 +90,7 @@
 		518BDC712A30F5B300CD98C7 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		518BDC732A30F62100CD98C7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		518BDC772A30F6CA00CD98C7 /* LessionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionDTO.swift; sourceTree = "<group>"; };
+		518BDC792A319AE600CD98C7 /* PrealoadedData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrealoadedData.plist; sourceTree = "<group>"; };
 		51B331062A149D1E0071BD56 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B331092A149D1E0071BD56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B3310B2A149D1E0071BD56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				51B331122A149D1E0071BD56 /* LearningApp.xcdatamodeld */,
 				5169C8922A2A49670064AF17 /* RedisterUserRequest.swift */,
 				518BDC772A30F6CA00CD98C7 /* LessionDTO.swift */,
+				518BDC792A319AE600CD98C7 /* PrealoadedData.plist */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518BDC7A2A319AE700CD98C7 /* PrealoadedData.plist in Resources */,
 				51B331162A149D210071BD56 /* Assets.xcassets in Resources */,
 				5169C8582A2A403E0064AF17 /* GoogleService-Info.plist in Resources */,
 			);

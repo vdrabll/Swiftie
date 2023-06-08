@@ -27,7 +27,7 @@ final class CoreDataServise {
     }
     
     func getItem(with id: UUID?, complitionhandler: (Lession) -> ()) {
-        var entity = NSEntityDescription.entity(forEntityName: "SwiftLessions", in: context)
+        let entity = NSEntityDescription.entity(forEntityName: "SwiftLessions", in: context)
 
         let fetchRequest: NSFetchRequest<SwiftLessions> = SwiftLessions.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "id == %@", "\(String(describing: id))")

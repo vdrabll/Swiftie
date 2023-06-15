@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Lession: Codable {
+    let name: String
+    let content: String
+    let questions: String
+}

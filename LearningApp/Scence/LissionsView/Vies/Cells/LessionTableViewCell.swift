@@ -15,14 +15,16 @@ class LessionTableViewCell: UITableViewCell {
     
     var lessionNumber: UILabel = {
         var lable = UILabel()
-        lable.text = "Тема №1"
+        lable.font = UIFont(name: "American Typewriter", size: 20)
+        lable.textColor = .orange
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
     }()
     
     var lessionName: UILabel = {
         var lable = UILabel()
-        lable.text = "Введение"
+        lable.textColor = .orange
+        lable.font = UIFont(name: "American Typewriter", size: 20)
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
     }()
@@ -30,7 +32,7 @@ class LessionTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
            super.init(style: style, reuseIdentifier: reuseIdentifier)
-            contentView.backgroundColor = . red
+        contentView.backgroundColor = .white
         contentView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         contentView.layer.cornerRadius = 15
             setupSubview()
@@ -41,12 +43,6 @@ class LessionTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//        print("hello world")
-//        // Configure the view for the selected state
-//    }
 }
 
 private extension LessionTableViewCell {

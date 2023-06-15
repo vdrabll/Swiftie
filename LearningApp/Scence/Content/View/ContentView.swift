@@ -13,11 +13,12 @@ struct LessionView: View {
             ScrollView {
                     VStack{
                             Text("""
-         **Hi i am markdown**
-                                
+         \(cells[indexPath.row])
+
          """)
-                            .frame(width: 400,
-                                   height: 800,
+                        
+                            .frame(width: 350,
+                                   height: 1100,
                                    alignment: .center)
                         
                         Button("Далее ") {
@@ -30,7 +31,7 @@ struct LessionView: View {
         }
         
     }
-        
+
     }
 
 

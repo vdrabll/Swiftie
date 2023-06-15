@@ -29,14 +29,16 @@ final class MainViewController: UIView {
     }
     
     private func setupSegmentControll() {
+        var attr = [NSAttributedString.Key.font: UIFont(name: "American Typewriter", size: 20)!]
         self.pageControll = UISegmentedControl(items: self.viewModel.segmentData)
+        self.pageControll.setTitleTextAttributes(attr, for: .normal)
         self.pageControll.backgroundColor = .clear
         self.pageControll.addTarget(self, action: #selector(selectedValue), for: .valueChanged)
     }
     
     @objc func selectedValue(target: UISegmentedControl) {
         
-    // TODO: исправить дефолтное окно и размер вью аккаунта
+  
         addSubview(lessionsView)
         lessionsView.translatesAutoresizingMaskIntoConstraints = false
         setSize(view: lessionsView)

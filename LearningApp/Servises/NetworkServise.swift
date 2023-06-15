@@ -8,10 +8,6 @@
 import Foundation
 
 final class NetworkServise {
-    
-    let session = URLSession(configuration: .default)
-    let urlRequest = URLRequest(url: URL(string: Constants.url)!)
-    
     private enum Constants {
         static let url = "http://127.0.0.1:8080/lessions/@s"
     }
@@ -32,6 +28,7 @@ final class NetworkServise {
                 }
             }
         }
+        task.resume()
         
     }
     

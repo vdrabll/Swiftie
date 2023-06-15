@@ -7,9 +7,14 @@
 
 import UIKit
 
+struct Names {
+    var number: String
+    var name: String
+}
+
 class LessionsView: UIView{
     
-     var viewModel = LessionViewModel()
+    var viewModel = LessionViewModel()
     
     var tableView: UITableView = {
         var table = UITableView()
@@ -59,14 +64,17 @@ extension LessionsView: UITableViewDelegate, UITableViewDataSource {
             return headerView
         }
     func numberOfSections(in tableView: UITableView) -> Int {
-        20
+        10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: LessionTableViewCell.identifire, for: indexPath) as! LessionTableViewCell
-//        cell.heightAnchor.constraint(equalToConstant: 140).isActive = true
+        let cell: LessionTableViewCell = tableView.dequeueReusableCell(withIdentifier: LessionTableViewCell.identifire, for: indexPath) as! LessionTableViewCell
+        cell.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 20, right: 0)
+        
+        cell.lessionNumber.text = "Тема № \(cells[indexPath.section].number)"
+        cell.lessionName.text = cells[indexPath.section].name
         cell.layer.cornerRadius = 25
-        cell.backgroundColor = .red
+        cell.backgroundColor = .purple
         return cell
     }
     

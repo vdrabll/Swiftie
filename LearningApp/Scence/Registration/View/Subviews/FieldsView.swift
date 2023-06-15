@@ -51,7 +51,7 @@ final class FieldsView: UIView {
         field.layer.cornerRadius = 15
         field.borderStyle = .roundedRect
         field.translatesAutoresizingMaskIntoConstraints = false
-//        field.inputDelegate изучить метод потом
+
         field.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         return field
     }()
@@ -72,7 +72,7 @@ final class FieldsView: UIView {
         field.layer.cornerRadius = 15
         field.translatesAutoresizingMaskIntoConstraints = false
         field.borderStyle = .roundedRect
-//        field.inputDelegate изучить метод потом
+
         field.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         return field
     }()
